@@ -1,0 +1,13 @@
+language: python
+python:
+  - "3.6"
+# command to install dependencies
+install:
+  - pip install -r requirements.txt
+# command to run testswo
+script:
+  - pytest # or py.test for Python versions 3.5 and below
+YAML
+notifications:
+  slack:
+    secure: ZmLRs56K3K9tab9ytdOZfIm8pmL3LkG9qSL4wrI3gjUttxFJ0XVfvUcXUGqKkA7P7+6f8rZryZiyXPm7YO5EL1SwUkcp21JOT1vHBy00eQkVRQXyEiHzFAixdtCEF6Gyqp2+4lDSxYBbsRPXAY4vXlyvRkqo2aBNMJSg8fxEz2bnevEORbSVDOhdobaeNi7MPjblP8RmWRAKZ1jn8uFiGReo8O2lNaYnc9rWwQNMUrPG8aCR7Uo4Ap2rjHjbM2oa4c3zmtlqKI7BYcPcOJsm5lK3RFY44dblRqBrGbW7DDyemogNvlXoZbe79ek5k8xNqk94KK1QdxgPLps18HHqFgtkrg0v9sHM9Yh8xYZ40TbC3Ozn7i6AnqGzneIPL5IWCr3Rpnvfz1sJSzSJqC/qVpHCLrQDhRg62241q1zhR61BgR3Lz+batrGb0QFsPNkrkEb4MBHv7fr48o9C/EcgPHlpfdTQx3GjaMnukUBf2NVvJwos8mIXQnebZf3cH5mM/WxaB+onWpM8LgnnONYjI9bmj5LjGPBfdwszWM6wj6eGvo3Ih/0Ek3/VJL4F5tvwwNziU3PKpGLPkAH44qSpOIu5HYE0qo+DgWzHEQVWVdh9/LqfTDa4gMVVaAQSEu//RG4I2gzXy3lmeCkkcyTVM9X0okpIVVCIAG7XE1p5EL0=
